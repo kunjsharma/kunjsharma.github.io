@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<title>Community View</title>
+		<link rel="stylesheet" type="text/css" href="style/universal.css"/>
+		<!-- <link rel="stylesheet/less" href="style/vars.less" type="text/css" /> -->
+		<link rel="stylesheet/less" href="style/home.less" type="text/css" />
+		<script src="script/less-1.5.0.min.js"></script>
+		<link href="font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="w_cBodyBgContainer"></div>
+		<!-- Tooltip shows when hover on user -->
+		<div id="w_oTooltip">
+			<div class="w_cTooltipC1U" id="w_oTooltipUpArrow">
+				<div class="w_cTooltipC2U"></div>
+			</div>
+			<div class="w_cTooltipW">
+				<!-- <div id="w_oTooltipClose">X</div> -->
+				<div id="w_oTooltipPhoto"><img src="images/ico-user-tooltip.png" /></div>
+				<div id="w_oTooltipDetails">
+					<p id="w_oTooltipDetails01">Jane Williams</p>
+					<p id="w_oTooltipDetails02">Nokia Devices & Solutions Expertise</p>
+					<p id="w_oTooltipDetails03">Communities: Nokia Way, Personal Effectiveness, Asha and 2 more</p>
+					<p id="w_oTooltipDetails04">Email: jane.williums@redtray.co.uk</p>
+				</div>
+				<div id="w_oTooltipButtons">
+					<input id="w_oTooltipButtonSendMessage" type="button" class="w_oButton3A" value="SEND MESSAGE"/>
+					<button id="w_oTooltipButtonFollow" class="w_oButton3A"><i class="fa fa-plus fa-10"></i> FOLLOW</button>
+					<!-- <button id="w_oTooltipButtonFollow" class="w_oButton3A"><i class="fa fa-minus fa-10"></i> UNFOLLOW</button> -->
+				</div>
+			</div>
+			<div class="w_cTooltipC1" id="w_oTooltipDownArrow">
+				<div class="w_cTooltipC2"></div>
+			</div>
+		</div>
+		<!-- Others popup shows when user hover on 'n others' clicks-->
+		<div id="w_oOthersPopup">
+			<div class="w_cOthersPopupC1U" id="w_oOthersPopupUpArrow">
+				<div class="w_cOthersPopupC2U"></div>
+			</div>
+			<div class="w_cOthersPopupW">
+				<div id="w_oOthersPopupDetails">
+					<p id="w_oOthersPopupDetails01">Jane Williams</p>
+				</div>
+				<!-- <div id="w_oOthersPopupButtons">
+					<input id="w_oOthersPopupButtonSendMessage" type="button" class="w_oButton3" value="SEND MESSAGE"/>
+					<input id="w_oOthersPopupButtonFollow" type="button" class="w_oButton2" value="FOLLOW"/>
+				</div> -->
+			</div>
+			<div class="w_cOthersPopupC1" id="w_oOthersPopupDownArrow">
+				<div class="w_cOthersPopupC2"></div>
+			</div>
+		</div>
+		<!-- Password security popup shows when user types password -->
+		<!--
+		<div id="w_oPSPopup">
+			<div class="w_cPSPopupC1" id="w_oPSPopupDownArrow">
+				<div class="w_cPSPopupC2"></div>
+			</div>
+			<div class="w_cPSPopupW">
+				<div id="w_oPSPopupDetails">
+					Content
+				</div>
+			</div>
+		</div>
+		-->
+		<!-- PopupContainer: Holds people popup, -->
+		<!-- <div id="w_oPopupContainerBlocker">
+			<div id="w_oPopupContainer">
+				<font size="7">A</font>
+			</div>
+		</div> -->
+		<!-- Certificate Popup -->
+		<div id="w_oCertificatePopupBlocker">
+			<div id="w_oCertificatePopup">
+				<a href="javascript:void(0);" class="w_cExitCertificateButton"></a>
+				<div id="w_oCertificatePopupBase1">
+					<div id="w_oCertificatePopupLogo1"></div>
+					<div id="w_oCertificatePopupLogo2"></div>
+					<div id="w_oCertificatePopupLogo3"></div>
+					<div id="w_oCertificatePopupLogo4"></div>
+				</div>
+				<div id="w_oCertificatePopupBase2">
+					<div id="w_oCertificatePopupLogo5"></div>
+					<div id="w_oCertificatePopupLogo6"></div>
+				</div>
+				<div id="w_oCertificatePopup01">CONGRATULATIONS</div>
+				<div id="w_oCertificatePopup02">Martin Pyle</div>
+				<div id="w_oCertificatePopup03">You have been accrediated for the Nokia lorem ipsum course...</div>
+				<div id="w_oCertificatePopup04">24 October 2013</div>
+			</div>
+		</div>
+		<!-- Popup blocker -->
+		<div id="w_oWelcomePopupBlocker">
+			<div id="w_oWelcomePopup">
+				<div id="w_oWelcomePopupLeft">
+					<div id="w_oWelcomePopupLeftT1">WELCOME TO THE</div>
+					<div id="w_oWelcomePopupLeftT2">NOKIA CONTACT CENTRE</div>
+					<div id="w_oWelcomePopupLeftT3">CARE COMPETENCY PROGRAM!</div>
+				</div>
+				<div id="w_oWelcomePopupRight">
+					<img src="images/ico-welcome-crown.png" width="141" height="112"/><br/>
+					<p id="w_oWelcomePopupHeading">Get Ready....... <span id="w_oWelcomePopupHeadingS">to</span></p>
+					<ul>
+						<li>Build your skills as a Care Professional</li>
+						<li>Join a team that delivers great consumer service</li>
+						<li>Develop your product knowledge and customer service capabilities with great training</li>
+						<li>Progress your career through being recognized as an accredited Nokia Agent</li>
+					</ul>
+					<p id="w_oWelcomePopupPara">You can get started by selecting the <b>GET STARTED</b> button below and then selecting the <b>Overview</b> disc on the page below.<br/>
+						<input id="w_oGetStartedButton" type="button" class="w_oButton3" style="margin: 25px 0px 0px 0px;" value="GET STARTED"/>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="w_oPopupBlocker">
+			<div id="w_oPopup">
+				<a href="javascript:void(0);" class="w_cExitPopupButton"><i class="fa fa-times"></i></a>
+				<div id="w_oPlayer">
+					<video id="w_oVideoFrame" autoplay loop controls tabindex="0" width="946" height="532" poster="">
+						<source src="video.webm" type='video/webm; codecs="vp8, vorbis"' />
+						<source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+						<source src="video.ogv" type='video/ogg; codecs="theora, vorbis"' />
+						Video tag not supported. Download the video <a href="#">from here</a>.
+					</video>
+					<!-- <audio id="m_oAudio" controls>
+					  <source src="horse.ogg" type="audio/ogg">
+					  <source src="horse.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>  -->
+					<!--<div id="m_oDownloadContainer" class="w_cDownloadContainer">
+						<div id="m_oDownload">
+							<div style="padding:0px 0px 0px 456px;"><i class="fa fa-file-text-o fa-55x m_oDownloadTextBg"></i></div>
+							<div id="m_oDownloadImage" style="margin:15px; float:left;clear: both;">
+								<img src="images/ico-download.png" />
+							</div>
+							<div id="m_oDownloadLeft" style="margin-top:205px; height: 18px; width: 10px;float: left;"></div>
+							<div id="m_oDownloadRight" style="margin-top:205px; 18px;width: 10px;float: right;"></div>
+							<div id="m_oDownloadContent" style="margin: 205px auto;width: 335px;">
+								<div id='m_oDownloadIcon' style='float: left;'>
+									<img id='m_oDownloadIconImage' src="images/ico-doc-default.png" />
+								</div>
+								<div id='m_oDownloadThumbnail' style='float:right;'>
+									<img id='m_oDownloadThumbnailImage' src="images/tn-default.jpg" />
+								</div>
+								<div id='m_oDownloadButton' style='float:right;clear: both;'>
+									<input id="w_oDownloadButton" class="w_oButton2" type="button" value="OPEN"></input>
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+				<div class="w_oPlayerBottom">
+					<div class="w_oPlayerBottomLeft">
+						<p id="w_oLaunchTitleV" class="w_oLayout09">Lumia 920 Camera</p>
+						<p class="w_oLayout09" id="raty1" style="width: 100%;clear: both;float: left;padding-bottom: 8px;"></p>
+						<p>Learn all about why the Lumia 920 Camera is the best smart phone camera available. With PureView technology and Carl Zeiss lens the Lumia 920 captures blur-free videos even if the camera’s shaking or in low light, and thanks to the Optical Image Stablisation owners can take blur-free photos every time.</p>
+					</div>
+					<div class="w_oPlayerBottomRight">
+						<div class="w_oTable">
+							<div class="w_oTableRow">
+								<div id="w_oData7" class="w_oTableCell w_oLayout08FA">
+									<b><a id="w_Link1" href="javascript:void(0);">Recommend AAAAA</a> | <a  id="w_Link2" href="javascript:void(0);">Rate</a> | <a  id="w_Link3" href="#">Like</a></b>
+									<!-- <b><a id="w_Link1" href="javascript:void(0);">Recommend</a></b> -->
+								</div>
+							</div>
+							<div class="w_oTableRow">
+								<div class="w_oTableCell w_oLayout03A" id="w_oVideoRecomendTable" style="height:auto; padding: 6px 6px 6px 1px;">
+									<span class="w_oInputSpan2" id="w_oVideoRecomend">
+										<textarea onKeyUp="autoSize(this);" onKeyDown="autoSize(this);" class="w_oInput3" id="w_oVRecomendTxt1" placeholder="Worth recommanding because...?"></textarea><br/>
+										<div  class="w_oInput2" id="w_oVSecondField">
+											<input type="hidden" class="token-input-style1" id="w_oVRecomendTxt2" />
+										</div>
+										
+										<span class="w_cPostToDD" id="w_oVRecomendPost">
+											<a href="javascript:void(0)" id="w_oVPostTo">Post to...</a>
+											<input type="hidden" class="token-input-style2" id="w_oVRecomendTxt3" />
+										</span>
+										<!--<select id="w_oPostToDDMenu">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>-->
+										<input id="w_oVRecommendButton" type="button" class="w_oButtonDisabled3" style="margin: 0px 0px 0px 8px;" value="RECOMMEND"/>
+									</span>
+									
+									<span class="w_oInputSpan2" id="w_oVideoRate" style="display:none; padding-bottom:0;">
+										<span class="w_oLayout09" id="raty2" style="float: left; width: 160px !important; overflow: hidden;padding-bottom: 8px;"></span>
+											<input id="w_oLaunchRateButton" type="button" class="w_oButton2" style="margin-left: 20px; margin-top:3px; float:left;" value="RATE"/>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="w_oProfileFrame">
+			<iframe id="w_oProfile" frameborder="0" style="width:1000px; min-height:990px; margin-top:80px;"></iframe>
+		</div>
+		<div id="w_oRecentActivityBlocker">
+			<div id="w_oRecentActivityDiv">
+				
+				<div class="w_cRecentActivityContainer">
+						<div class="w_cRACloseWrapper">
+							<a href="javascript:void(0);" class="w_cExitRecentActivityBlocker"><i class="fa fa-times"></i></a>
+						</div>
+						<div class="w_cRAContentContainer">
+							<div class="w_cRAHeading"><span class="w_cRAHeadingSpan">Recent activity</span></div>
+							
+							<div class="w_cRActCC">
+								
+								<div class="w_cRActCWrapper">
+									<div class="w_cRActPicture">
+										<img src="images/ra-image1.jpg" alt="" />	
+									</div>
+									<div class="w_cRActDescription">
+										<span class="w_cRActDescHeading"><span class="bold">Jane Williams ></span> Windows phone</span>
+										<div class="w_cRActDeslevel1">
+											<p class="w_cRTextLevel">Passes Lumia 920 Camera</p>
+											<p class="w_cRLinkLevel"><a href="javascript:void(0);">Like</a> <!--<a href="javascript:void(0);">Reply</a> <a href="javascript:void(0);">Share</a> <a href="javascript:void(0);">More</a>--> <span class="w_cRActDesDate">May 28 at 9:28 am</span></p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="w_cRActCWrapper">
+									<div class="w_cRActPicture">
+										<img src="images/ra-image2.jpg" alt="" />	
+									</div>
+									<div class="w_cRActDescription">
+										<span class="w_cRActDescHeading"><span class="bold">Evelyn Cassidy ></span> Nokia Way</span>
+										<div class="w_cRActDeslevel1">
+											<p class="w_cRTextLevel">Recommended Nokia OS & Solution Expertise</p>
+											<p class="w_cRText2Level">This was great I learnt so much about the company and the technology you've got to check this out!</p>
+											<p class="w_cRLinkLevel"><a href="javascript:void(0);">Like</a> <!--<a href="javascript:void(0);">Reply</a> <a href="javascript:void(0);">Share</a> <a href="javascript:void(0);">More</a>--> <span class="w_cRActDesDate">May 23 at 3:15 pm</span></p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="w_cRActCWrapper">
+									<div class="w_cRActPicture">
+										<img src="images/ra-image3.jpg" alt="" />	
+									</div>
+									<div class="w_cRActDescription">
+										<span class="w_cRActDescHeading"><span class="bold">Helen Goodband ></span> Windows phone</span>
+										<div class="w_cRActDeslevel1">
+											<p class="w_cRTextLevel">Recommended Lumia 920 Camers</p>
+											<p class="w_cRText2Level">Loved finding out about this camera technology especially PureView, so good to know this stuff and be able to pass it onto the device users, because it is so amazing. Well worth looking at!</p>
+											<p class="w_cRLinkLevel"><a href="javascript:void(0);">Like</a> <!--<a href="javascript:void(0);">Reply</a> <a href="javascript:void(0);">Share</a> <a href="javascript:void(0);">More</a>--> <span class="w_cRActDesDate">May 17 at 10:14 pm</span></p>
+											<p class="w_cRLikeLevel1">
+												<span class="w_cRLikeBox"><img src="images/like_icon.png" alt="" /></span> 
+												<span class="w_cRLikeText"><a href="javascript:void(0);">2 people</a>like this</span>
+											</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="w_cRActCWrapper">
+									<div class="w_cRActPicture">
+										<img src="images/ra-image3.jpg" alt="" />		
+									</div>
+									<div class="w_cRActDescription">
+										<span class="w_cRActDescHeading"><span class="bold">Helen Goodband</span></span>
+										<div class="w_cRActDeslevel1">
+											<p class="w_cRTextLevel">Updated their profile</p>
+											<p class="w_cRLinkLevel"><a href="javascript:void(0);">Like</a> <!--<a href="javascript:void(0);">Reply</a> <a href="javascript:void(0);">Share</a> <a href="javascript:void(0);">More</a>--> <span class="w_cRActDesDate">May 17 at 9:30 am</span></p>
+										</div>
+									</div>
+								</div>
+								
+								
+								<div class="w_cRActCWrapper">
+									<div class="w_cRActPicture">
+										<img src="images/ra-image2.jpg" alt="" />		
+									</div>
+									<div class="w_cRActDescription">
+										<span class="w_cRActDescHeading"><span class="bold">Evelyn Cassidy ></span> Nokia Way</span>
+										<div class="w_cRActDeslevel1">
+											<p class="w_cRTextLevel">Completed Nokia Brand Ambassadorship</p>
+											<p class="w_cRLinkLevel"><a href="javascript:void(0);">Like</a> <!--<a href="javascript:void(0);">Reply</a> <a href="javascript:void(0);">Share</a> <a href="javascript:void(0);">More</a>--> <span class="w_cRActDesDate">April 28 at 4:39 pm</span></p>
+											<p class="w_cRLikeLevel1">
+												<span class="w_cRLikeBox"><img src="images/like_icon.png" alt="" /></span> 
+												<span class="w_cRLikeText"><a href="javascript:void(0);">You</a> & <a href="javascript:void(0);">10 people</a> like this</span>
+											</p>
+											<div class="w_cRActDescriptionSLC">
+												<div class="w_cRActDescriptionSLW">
+													<div class="w_cRActPictureSL">
+														<img src="images/ra-image-s3.jpg" alt="" />	
+													</div>
+													<div class="w_cRActDescriptionSL">
+														<span class="w_cRActDescSubHeading">Helen Goodband</span>
+														<p class="w_cRText2Level">Well done Evelyn!</p>
+														<p class="w_cRLinkLevel"><a href="javascript:void(0);">Like</a> <!--<a href="javascript:void(0);">Reply</a> <a href="javascript:void(0);">Share</a> <a href="javascript:void(0);">More</a>--> <span class="w_cRActDesDate">May 3 at 9:21 am</span></p>
+														
+													</div>
+												</div>
+											</div>
+											<p class="w_cRLikeLevelS">
+												<span class="w_cRLikeBox"><img src="images/like_icon.png" alt="" /></span> 
+												<span class="w_cRLikeText"><a href="javascript:void(0);">4 people</a> like this</span>
+											</p>
+										</div>
+									</div>
+		
+		
+								</div>
+								
+								
+								
+								<p id="w_oPRAMoreButtonContainer" class="w_cRLoadMoreAct">
+									<div id="w_oPRecentActivityMoreButton" class="w_cDownButton"><i class="fa fa-chevron-down w_cBlack"></i></div>
+									<img src="images/small-spinner.gif" id="w_oPRecentActivitySpinner" alt="" align="middle" />
+								</p>
+								
+								
+							</div>
+						</div>
+					
+								
+				</div>
+			
+			</div>
+		</div>
+		<!-- Other popup description blocker -->
+		<div id="w_oOthersDescPopupBlocker">
+			<div id="w_oOthersDescPopupDiv">
+				<div class="w_oOthersDescPopupContainer">
+					<div class="w_cODPCloseWrapper">
+						<a href="javascript:void(0);" class="w_cExitODPBlocker"><i class="fa fa-times"></i></a>
+					</div>
+					<div class="w_cODPContentContainer">
+						<div class="w_cODPHeading"><span class="w_cODPHeadingSpan">People who like this activity</span></div>
+						<div class="w_cODPCC">
+							<!-- Row -->
+							<div class="w_cODPCWrapper">
+								<div class="w_cODPCPicture">
+									<img src="images/ra-image1.jpg" alt="" />	
+								</div>
+								<div class="w_cODPCDescription">
+									<span class="w_cODPCDescHeading bold">Jane Williams</span>
+									<div class="w_cODPCDeslevel1">
+										<p class="w_cODPCTextLevel">Passes Lumia 920 Camera</p>
+									</div>
+								</div>
+								<div class="w_cODPCButtonContainer">
+									<!-- <button id="" class="w_oButton3A"><i class="fa fa-plus fa-10"></i> FOLLOW</button> -->
+									<!-- <button id="w_oTooltipButtonFollow" class="w_oButton3A"><i class="fa fa-minus fa-10"></i> UNFOLLOW</button> -->
+								</div>
+							</div>
+							<!-- End of row -->
+							<div class="w_cODPCWrapper">
+								<div class="w_cODPCPicture">
+									<img src="images/ra-image1.jpg" alt="" />	
+								</div>
+								<div class="w_cODPCDescription">
+									<span class="w_cODPCDescHeading bold">Jane Williams</span>
+									<div class="w_cODPCDeslevel1">
+										<p class="w_cODPCTextLevel">Passes Lumia 920 Camera</p>
+									</div>
+								</div>
+								<div class="w_cODPCButtonContainer">
+									<!-- <button id="" class="w_oButton3A"><i class="fa fa-plus fa-10"></i> FOLLOW</button> -->
+									<!-- <button id="w_oTooltipButtonFollow" class="w_oButton3A"><i class="fa fa-minus fa-10"></i> UNFOLLOW</button> -->
+								</div>
+							</div>
+							<p id="w_oODPMoreButtonContainer" class="w_cODPCLoadMore">
+								<span id="w_oODPMoreButton" class="w_cDownButton"><i class="fa fa-chevron-down w_cBlack"></i></span>
+								<img src="images/small-spinner.gif" id="w_oODPMoreButtonSpinner" alt="" align="middle" />
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div id="w_oLogoContainer">
+			<div id="w_oNCLogo" class="w_cDisplay">
+				<img src="images/logo-nokia-ca-home.png" width="272" height="114"/>
+			</div>
+		</div>
+		
+		<div id="w_oContainer" class="w_oAni">
+			<div id="w_oNavAssetsHolder" class="w_cDisplay">
+				<div id="w_oNotificationBar" class="w_cDisplay">
+					<div class="w_oNotificationBarButton w_cDisplay" id="w_oProfileMenu">
+						<!-- <img src="images/ico-profile-19.png" /> -->
+						<i class="fa fa-user fa-c-nav"></i>
+						<span class="w_cProfileDDPointer" style="display:none;"></span>
+						<ul>
+							<li><a id="w_oNavDDLinkPP" href="javascript:void(0);"><span class="span1"><i class="fa fa-user fa-c-dd"></i></span><span class="span2">View profile</span></a></li>
+							<!-- <li><a id="w_oNavDDLinkVP" href="javascript:void(0);"><span class="span1"><img src="images/others_profile.png" ></span><span class="span2 span2lessspace">View other people</span></a></li> -->
+							<li><a id="w_oNavDDLinkL" href="javascript:void(0);" class="w_cNavDDLinkSub"><span class="span1"><i class="fa fa-chevron-right fa-c-dd"></i></span><span class="span2">Language</span></a>
+								<ul>
+									<li><a id="w_oLangDDLink0" href="javascript:void(0);"><span class="span1"></span></span><span class="span2">AAAAAAAA</span></a></li>
+									<li><a id="w_oLangDDLink1" href="javascript:void(0);"><span class="span1"></span><span class="span2">BBBB</span></a></li>
+									<li><a id="w_oLangDDLink2" href="javascript:void(0);"><span class="span1"></span><span class="span2">CCCCCCCCCC</span></a></li>
+									<li><a id="w_oLangDDLink3" href="javascript:void(0);"><span class="span1"></span><span class="span2">EE</span></a></li>
+									<li><a id="w_oLangDDLink4" href="javascript:void(0);"><span class="span1"></span><span class="span2">FFFFFFFFFFFFFF</span></a></li>
+									<li><a id="w_oLangDDLink5" href="javascript:void(0);"><span class="span1"></span><span class="span2">G</span></a></li>
+								</ul>
+							</li>
+							<!--<li><a href="#">View other people</a></li>
+							<li><a href="#">View settings</a></li>-->
+							<li><a id="w_oNavDDLinkWS" href="javascript:void(0);"><span class="span1"><i class="fa fa-envelope fa-c-dd" style="font-size: 13px;"></i></span><span class="span2">View welcome message</span></a></li>
+							<li><a href="#" class="w_cPDDSignout"><span class="span1"><i class="fa fa-times fa-c-dd"></i></span><span class="span2">Sign out</span></a></li>
+						</ul>
+					</div>
+					<!-- <div id="w_oHomeButton" class="w_oNotificationBarButton w_cDisplay"><img src="images/ico-home-19.png" style="margin-top:1px;" /></span></div> -->
+					<div id="w_oHomeButton" class="w_oNotificationBarButton w_cDisplay"><i class="fa fa-home fa-c-nav"></i></div>
+					
+					<!--
+					<div class="w_oNotificationBarAlerts w_cDisplay">
+						<div id="w_oSmallNotifIconHolder" class="w_cDisplay">
+							<img id='w_oSmallNotifIcon' src="images/ico-notification-12.png" />
+						</div>
+						w_oNotificationBarDDHolder 
+						<div id="w_oProfileMenu2" class="w_cDisplay">
+							<p class="w_cNotificationText">Notifications</p>
+							<span class="w_cProfileDDPointer2" style="display:none;"></span>
+							<ul>
+								<li>
+									<span class="w_cNotificationImage"><img src="images/ico-dummy-dd-01.jpg" class="w_cNIHolder"/></span>
+									<span class="w_cNotificationText">
+										<b>Jane Williams</b>&nbsp;
+										<a href="#">New follower</a>
+										<p class="w_cText1">Assigned to a community</p>
+										<p class="w_cText1"><b>Accreditation level achieved</b></p>
+										<p class="w_cText2">This was great I learnt so much about the company and the...</p>
+									</span>
+								</li>
+								<li>
+									<span class="w_cNotificationImage"><img src="images/ico-dummy-dd-04.png" class="w_cNIHolder"/></span>
+									<span class="w_cNotificationText">
+										<b>Helen Goodband</b><br/>
+										<a href="#">New follower</a>
+									</span>
+								</li>
+								<li>
+									<span class="w_cNotificationImage">
+										<img src="images/ico-dummy-dd-03.png" class="w_cNIHolder"/>
+									</span>
+									<span class="w_cNotificationText">
+										<b>John Smith</b><br/>
+										<a href="#">New follower</a>
+									</span>
+								</li>
+								<li>
+									<span class="w_cNotificationImage">
+										<img src="images/ico-dummy-dd-02.jpeg" class="w_cNIHolder"/>
+									</span>
+									<span class="w_cNotificationText">
+										<b>Helen Goodband</b><br/>
+										<a href="#">New follower</a>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div id="w_oNotificationBarCountHolder" class="w_cDisplay">
+							4
+						</div>
+						
+					</div>
+					-->
+					
+					<div class="w_oNotificationBarButton w_cDisplay" id="w_oAdminMenu">
+						<!-- <img src="images/lock.png" style="margin:1px 0 0 0;" /> -->
+						<i class="fa fa-lock fa-c-nav"></i>
+						<span class="w_cAdminDDPointer" style="display:none;"></span>
+						<ul>
+							<li><a id="w_oNavDDLinkPP" href="javascript:void(0);" class="w_cPDDViewAdmin"><span class="span1">User Management</span></a></li>
+							<li><a id="w_oNavDDLinkPP" href="javascript:void(0);" class="w_cPDDViewAdmin"><span class="span1">Activity(learning) Management</span></a></li>
+							<li><a id="w_oNavDDLinkPP" href="javascript:void(0);" class="w_cPDDViewAdmin"><span class="span1">Community Management</span></a></li>
+							<li><a id="w_oNavDDLinkPP" href="javascript:void(0);" class="w_cPDDViewAdmin"><span class="span1">Accreditation Management</span></a></li>
+							<li><a id="w_oNavDDLinkPP" href="javascript:void(0);" class="w_cPDDViewAdmin"><span class="span1">Reports</span></a></li>
+							<li><a href="javascript:void(0)" class="w_cPDDSignout"><span class="span1">Communication Management</span></a></li>
+							<li><a href="javascript:void(0)" class="w_cPDDSignout"><span class="span1">Configuration Settings</span></a></li>
+						</ul>
+					</div>
+					<!-- <div id="w_oHomeDummyButton" class="w_oNotificationBarButton w_cDisplay"><img src="images/ico-home-19.png" /></div> -->
+				</div>
+				<div id="w_oCNABar" class="w_cDisplay">
+					<!-- <p id="w_oCNABarText1">Nokia Agent</p>
+					<p id="w_oCNABarText2">Working towards Accreditation</p> -->
+					<i id="w_oCNABarSlideBack" class="fa fa-chevron-circle-left w_cWhite"></i>
+					<div id="w_oCNABarSlider">
+						<ul>
+							<li>
+								<div class="w_cCNABarText1" data-orig="">Test document set (Europe) <span class='w_cCNABarText1_1'>System Administrator</span></div>
+								<div class="w_cCNABarText2" data-orig="">Document activities completed.</div>
+							</li>
+							<li>
+								<div class="w_cCNABarText1" data-orig="">Nokia Agent <span class='w_cCNABarText1_1'>Job titlec</span></div>
+								<div class="w_cCNABarText2" data-orig="">Working towards Accreditation</div>
+							</li>
+							<li>
+								<div class="w_cCNABarText1" data-orig="">Nokia Agent 2 AAA AAA A AAAA AAA  AA AA<span class='w_cCNABarText1_1'>Job title</span></div>
+								<div class="w_cCNABarText2" data-orig="">@@@@ Working towards 22 Accreditation Working towards Accreditation Working towards Accreditation Working towards Accreditation Working towards Accreditation Working towards. @@@@ Working towards 22 Accreditation Working towards Accreditation Working towards Accreditation Working towards Accreditation Working towards Accreditation Working towards.</div>
+							</li>
+							<li>
+								<div class="w_cCNABarText1" data-orig="">Nokia Agent4 <span class='w_cCNABarText1_1'>Job titlec</span></div>
+								<div class="w_cCNABarText2" data-orig="">Working towards Accreditation 4</div>
+							</li>
+						</ul>
+					</div>
+					<i id="w_oCNABarSlideNext" class="fa fa-chevron-circle-right w_cWhite"></i>
+					<!-- <div id="w_oCNABarProgress">
+						<div id="w_oProgressBarContainer">
+							<div id="w_oProgressBar"></div>
+						</div>
+					</div> -->
+				</div>
+				<div id="w_oCNABarExpandButton">
+					<div id="w_oCNABarExpandButtonBg">aaa</div>
+					<i class="fa fa-chevron-down fa-w"></i>
+				</div>
+				<!-- <div id="w_oNCLogo" class="w_cDisplay">
+					<img src="images/logo-nokia-care.png" />
+				</div> -->
+			</div>
+			<!-- Outer circle -->
+			<div id="w_oCircle01" class="w_oAni w_cLinearGrad2 w_oCircle01Hidden">
+				<!-- Buttons attached outside to outer circle at top right -->
+				<div id="w_oCommsHolder" class="w_cCommsHolderH">
+					<div id="w_oComBtn0" class="w_cComBtnH"><p class="w_cComBtnDataH">Nokia Devices & Solutions Expertise</p></div>
+					<!-- <div id="w_oComBtn1" class="w_oAni w_cComBtn"><p class="w_cComBtnData">Personal Effectiveness</p></div>
+					<div id="w_oComBtn2" class="w_oAni w_cComBtn"><p class="w_cComBtnData">Asha</p></div>
+					<div id="w_oComBtn3" class="w_oAni w_cComBtn"><p class="w_cComBtnData">Nokia Devices & Solutions Expertise</p></div>
+					<div id="w_oComBtn4" class="w_oAni w_cComBtn"><p class="w_cComBtnData">Mobile Tech Basics</p></div> -->
+				</div>
+				<!-- Top left icon images on the outer circle -->
+				<div id="w_oUserIconsHolder">
+					<div id="w_oUIcoBtn0" class="w_cUIco w_cTooltip"></div>
+					<div id="w_oUIcoBtn1" class="w_cUIco w_cTooltip"></div>
+					<div id="w_oUIcoBtn2" class="w_cUIco w_cTooltip"></div>
+					<div id="w_oUIcoBtn3" class="w_cUIco w_cTooltip"></div>
+					<div id="w_oUIcoBtn4" class="w_cUIco w_cTooltip"></div>
+					<div id="w_oUIcoBtn5" class="w_cUIco w_cTooltip"></div>
+					<div id="w_oUIcoBtn6" class="w_cUIco w_cTooltip"></div>
+					<div id="w_oUIcoBtn7" class="w_cUIco w_cTooltip"></div>
+					<div id="w_oUIcoBtn8" class="w_cUIco w_cTooltip"></div>
+					<div id="w_oUIcoBtn9" class="w_cUIco w_cTooltip"></div>
+				</div>
+				<!-- Circle for animation purpose only -->
+				<!-- <div id="w_oCircle02HomeI2" class="w_oAni w_oCircle02HomeEx2"></div> -->
+				<!-- Arbitrate circle -->
+				<div id="w_oCircle02" class="w_oAni w_cLinearGrad w_oCircle02Hidden">
+					<div class="w_oAvgLearningDoughnut" data-percent="77" style="pointer-events:none;"></div>
+					<!-- Buttons start from top and go to right in arbitrate circle -->
+					<div id="w_oNanoHolder" style="z-index:0 !important">
+						<div id="w_oCircle0" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle1" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle2" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle3" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle4" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle5" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle6" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle7" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle8" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle9" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle10" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle11" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle12" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle13" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle14" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle15" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle16" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle17" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle18" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle19" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle20" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<!-- <div id="w_oCircle21" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle22" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle23" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle24" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle25" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle26" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle27" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle28" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle29" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle30" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle31" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle32" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle33" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle34" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle35" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle36" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle37" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle38" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle39" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle40" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle41" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle42" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle43" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle44" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle45" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle46" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle47" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle48" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div>
+						<div id="w_oCircle49" data-id="" class="w_cNanoBtn"><div class="w_cNSHolder"><div class="w_cNSShape"></div><div class="w_cNSIcon"></div></div><p class="w_oData"></p></div> -->
+					</div>
+					<!-- Circle for animation purpose only -->
+					<!-- <div id="w_oCircle02HomeI" class="w_oAni w_cLinearGrad2 w_oCircle02Home"></div> -->
+					<div id="w_oCircle02HomeI" class="w_oAni w_oCircle02Home"></div>
+					<div id="w_oCircle02HomeI2" class="w_oCircle02Home2"></div>
+					<!-- Circle for Icon or large text -->
+					<div id="w_oCircle03C04">
+						<div class="w_oCircleWrapper">
+							<p id="w_oCommTitle" class="w_oData1 w_oCommTitleBg"></p>
+						</div>
+					</div>
+					<!-- Core circle -->
+					<div id="w_oCircle03" class="w_oAni w_cLinearGrad2 w_cCircle03H">
+						<div class="w_oLearningDoughnut" data-percent="40" style="pointer-events:none;"></div>
+						<!-- Core circle data -->
+						<div id="w_oCircle03Data" class="w_oAni w_cCircle03DataH">
+							<div id='w_oTSco'>
+								<!-- <span id='w_oTScoScore'>67</span>
+								<span id='w_oTScoP'>%</span>
+								<span id='w_oTScoIcon'><img src="images/ico-tick-large.png" /></span> -->
+							</div>
+							<!-- Home data -->
+							<div id="w_oHomeData" style="position:static;">
+								<div class="w_oTable">
+									<!-- Left block of core data-->
+									<div class="w_oTableCell">
+										<div class="w_oTable" style="width: 104px;">
+											<div class="w_oTableRow" style="height: 139px;"></div>
+											<div class="w_oTableRow">
+												<div class="w_oTableCell"><div id="w_oHNavIconPP"></div></div>
+											</div><div class="w_oTableRow">
+												<div class="w_oTableCell"><div id="w_oHNavIconHome"></div></div>
+											</div><div class="w_oTableRow">
+												<div class="w_oTableCell"><div id="w_oHNavIconNotify"></div></div>
+											</div>
+										</div>
+									</div>
+									<div class="w_oTableCell">
+										<!-- Right block of core data -->
+										<div class="w_oTable" style="width: 422px;">
+											<div class="w_oTableRow">
+												<div class="w_oTableCell"><p class="w_oLayout10">John Smith</p><p class="w_oLayout04">Universal Agent</p><p style="width:360px;"><a href='javascript:main.displayCertificatePopup()'>Certificate</a> Dedicated <a href='javascript:main.PrintCertificate()'>Print</a> team player, constantly <a href='javascript:main.showPasswordSecurityPopup();' id='aaa'> my colleagues</a> with using specific software, finding the appropriate documentation and even editing business correspondence.</p></div>
+											</div>
+											<div class="w_oTableRow">
+												<div class="w_oTableCell" style="padding: 5px 0px 13px 0px;"><a class="w_cLight" id="w_oHomeLinkPP" href="javascript:void(0);">View Profile</a></div>
+											</div>
+											<div class="w_oTableRow">
+												<!-- Share update pointer -->
+												<div class="w_oData6 w_oTableCell w_oLayout08A">
+													<b><a id="w_oShareUpdateHomeLink" href="javascript:void(0);">Share update AAAAAAA</a> | <a  id="w_PraiseHomeLink" href="javascript:void(0);">Praise someone</a> | <a  id="w_oRecomandNanoHomeLink" href="javascript:void(0);">Recommend a nano</a></b> 
+													<!--<b><a  id="w_oRecomandNanoHomeLink" href="javascript:void(0);">Recommend a learning</a></b>-->
+												</div>
+												<!-- Praise someone pointer -->
+												<!-- <div id="w_oData6" class="w_oTableCell w_oLayout08B">
+													<b><a id="w_Link1" href="#">Share update</a> | <a  id="w_Link2" href="javascript:void(0);">Praise someone</a> | <a  id="w_Link3" href="#">Recommend a nano</a></b>
+												</div> -->
+												<!-- Recommend nano pointer -->
+												<!-- <div id="w_oData6" class="w_oTableCell w_oLayout08C">
+													<b><a id="w_Link1" href="#">Share update</a> | <a  id="w_Link2" href="#">Praise someone</a> | <a  id="w_Link3" href="javascript:void(0);">Recommend a nano</a></b>
+												</div> -->
+											</div>
+											<!-- Home view step 1  -->
+											
+											<!-- <div id="w_oShareUpdateHomeView" class="w_oTableRow"> -->
+											<!--
+											<div id="w_oShareUpdateHomeView">
+												<div class="w_oTableCell w_oLayout03A" style="height:35px; width:440px; padding: 0px 5px 6px 5px;">
+													<span class="w_oInputSpan">
+														<input type="text" class="w_oInput" placeholder="What's your update?"/>
+														<input id="w_oShareButton" type="button" class="w_oButton2" value="SHARE"/>
+													</span>
+												</div>
+											</div>
+											-->
+											<!-- End of home view step 1  -->
+											<!-- Home view 1 step 2  -->
+											
+											<!-- <div id="w_oPraiseHomeView" class="w_oTableRow"> -->
+											<!--
+											<div id="w_oShareUpdateHomeView2">
+												<div class="w_oTableCell w_oLayout03A" style="height:auto; padding: 4px 5px 3px 5px;">
+													<span class="w_oInputSpan2">
+														<input type="text" class="w_oInput2" placeholder="I've just sorted out one of our customers with a new pho|"/><br/>
+														<input type="text" class="w_oInput2" placeholder="Notify specific people..."/><br/>
+														<select id="w_oPostToDDMenu">
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+														</select>
+														<input id="w_oShareButton" type="button" class="w_oButton2" value="SHARE"/>
+													</span>
+												</div>
+											</div>
+											-->
+											<!-- End of home view 1 step 2  -->
+											<!-- Home view step 2  -->
+											
+											<!-- <div id="w_oRecomandNanoHomeView" class="w_oTableRow"> -->
+											<!--
+											<div id="w_oPraiseHomeView">
+												<div class="w_oTableCell w_oLayout03A" style="height:auto; padding: 4px 5px 3px 5px;">
+													<span class="w_oInputSpan2">
+														<input type="text" class="w_oInput2" placeholder="Who deserves praise?"/><br/>
+														<textarea class="w_oInput3" placeholder="What did they do?"></textarea><br/>
+														<input type="text" class="w_oInput2" placeholder="Notify specific people..."/><br/>
+														<span class="w_cPostToDD">
+															<a href="javascript:void(0)" style="float:left;">Post to...</a><a href="javascript:void(0)" style="float:left;margin:-2px 0px 0 10px;"><img src="images/ico-down-arrow.png" width="10"></a>
+														</span>
+														<input id="w_oPraiseButton" type="button" class="w_oButton2" value="PRAISE"/>
+													</span>
+												</div>
+											</div>
+											-->
+											<!-- End of home view step 1  -->
+											<div id="w_oShareUpdateHomeView">
+												<div class="w_oTableCell" id="w_oShareUpdateTable" style="padding: 4px 5px 6px 0px;">
+													<span class="w_oInputSpan2" id="w_oShareUpdateTxtWrapper" style="margin-left:0px;" >
+													<div class="w_oHShareExpandFormWrapper" style="position:absolute !important;">
+														<div id="w_oHShareUpdateFirstField">
+														<input type="text" class="w_oInput2" id="w_oHShareTxt1" placeholder="What's your update?"  />
+														</div>
+														
+														<input id="w_oHShareArtficialButton" type="button" class="w_oButtonDisabled3" value="RECOMMEND"/>
+														<br/>
+														<div  class="w_oInput2" id="w_oHThirdField">
+															<input type="hidden" class="token-input-style1" id="w_oHShareTxt2" />
+														</div>
+														
+														<span class="w_cPostToDD w_cHPostToWrapper" id="w_oHShareUpdatePost">
+															<a href="javascript:void(0)" id="w_oHShareUpdatePostTo">Post to...</a>
+															<input type="hidden" class="token-input-style2" id="w_oHShareTxt3" />
+														</span>
+														<input id="w_oHShareButton" type="button" class="w_oButtonDisabled3" value="RECOMMEND"/>
+													</div>
+													</span>
+												</div>
+											</div>
+											<!-- End of home view step 1  -->
+											<!-- Home view step 2  -->
+											<div id="w_oPraiseHomeView">
+												<div class="w_oTableCell" id="w_oHPraiseTable" style="padding:4px 5px 6px 0px;">
+													<span class="w_oInputSpan2" id="w_oPraiseTxtWrapper" style="margin-left:0px;" >
+													<div class="w_oHPraiseFormWrapper" style="position:absolute !important;">
+														<div  class="w_oInput2" id="w_oHPraiseFirstField">
+														<input type="hidden" class="token-input-style1" id="w_oHPraiseTxt1"  />
+														</div>
+														
+														<input id="w_oHPraiseArtficialButton" type="button" class="w_oButtonDisabled3" value="RECOMMEND"/>
+														<textarea onKeyUp="autoSize(this);" onKeyDown="autoSize(this);" class="w_oInput3" id="w_oHPraiseTxt2" placeholder="What did they do?" style="outline: none;"></textarea><br/>
+														<div  class="w_oInput2" id="w_oHThirdField">
+														<input type="hidden" class="token-input-style1" id="w_oHPraiseTxt3" />
+														</div>
+														
+														<span class="w_cPostToDD w_cHPostToWrapper" id="w_oHPraisePost">
+															<a href="javascript:void(0)" id="w_oHPraisePostTo">Post to...</a>
+															<input type="hidden" class="token-input-style2" id="w_oHPraiseTxt4" />
+														</span>
+														<input id="w_oHPraiseButton" type="button" class="w_oButtonDisabled3" value="RECOMMEND"/>
+													</div>
+													</span>
+												</div>
+											</div>
+											<!-- End of home view step 2  -->
+											<!-- Home view step 3  -->
+											<div id="w_oRecomandNanoHomeView">
+												<div class="w_oTableCell" id="w_oComRecomendTable" style="padding: 4px 5px 6px 0px;">
+													
+													<span class="w_oInputSpan2" id="w_oComRecomendTxtWrapper" style="margin-left:0px;" >
+													<div class="w_oHExpandFormWrapper" style="position:absolute !important;">
+														<div  class="w_oInput2" id="w_oHFirstField">
+														<input type="hidden" class="token-input-style0" id="w_oHRecomendTxt1"  />
+														</div>
+														
+														<input id="w_oHRecommendArtficialButton" type="button" class="w_oButtonDisabled3" value="RECOMMEND"/>
+														<textarea onKeyUp="autoSize(this);" onKeyDown="autoSize(this);" class="w_oInput3" id="w_oHRecomendTxt2" placeholder="Worth recommending because...?" style="outline: none;"></textarea><br/>
+														<div  class="w_oInput2" id="w_oHThirdField">
+														<input type="hidden" class="token-input-style1" id="w_oHRecomendTxt3" />
+														</div>
+														
+														<span class="w_cPostToDD w_cHPostToWrapper">
+															<a href="javascript:void(0)" id="w_oHPostTo">Post to...</a>
+															<input type="hidden" class="token-input-style2" id="w_oHRecomendTxt4" />
+														</span>
+														<input id="w_oHRecommendButton" type="button" class="w_oButtonDisabled3" value="RECOMMEND"/>
+													</div>
+													</span>
+													
+												</div>
+											</div>
+											<!-- End of home view step 3  -->
+											<div id="w_oRecentActivityHome" class="w_oHRecomendPost1" style="min-height:188px;">
+												<div class="w_oTableRow">
+													<div class="w_oTableCell w_cPanelBg" style="border-top: #FFFFFF 1px solid;"><p class="w_oLayout01">Recent activity</p></div>
+												</div>
+												<div class="w_oTableRowNewDiv" id="dv_toptworecentact">
+													<div class="w_oTableRow1">
+														<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px; width: 330px; padding-right: 80px;">
+															<p class="w_oLayout05" ><b class="w_cTooltip" id="w_oUserName0">Jane Williams</b> > Nokia Devices & Solutions Expertise</p>
+															<p class="w_oLayout07">Passed Lumia 920 Camera</p>
+															<p class="w_oLayout06">This was great I learnt so much about the company and the technology you've got the check this out! </p>
+															
+															<p class="w_oLayout07"><a class="w_cLight" href="#">Like</a><span class="w_cDnT">May 28 at 9:28 am</span></p>
+														</div>
+													</div>
+													<!-- Home view step 2 data to be commented -->
+													<div class="w_oTableRow1" style="display:none;">
+														<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px;  width: 340px; padding-right: 80px;">
+															<p class="w_oLayout05"><b class="w_cTooltip" id="w_oUserName1">Evenlyn Cassidy </b> > Nokia Devices & Solutions Expertise</p>
+															<p class="w_oLayout07">Recommended Nokia OS &amp; Solution Expertise training</p>
+															<p class="w_oLayout06">This was great I learnt so much about the company and the technology you've got the check this out! </p>
+															<p class="w_oLayout07"><a class="w_cLight" href="#">Like</a><span class="w_cDnT">May 28 at 9:28 am</span></p>
+														</div>
+													</div>
+												</div>
+												<div class="w_oTableRow" style="display:none;">
+													<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px;  width: 340px; padding-right: 80px; height:162px;">					<p class="w_oLayout11">There has not been any activity yet!</p>
+														<p class="w_oLayout12">Select a disc to explore the available learning.</p>
+
+													</div>
+												</div>
+												<div class="w_oTableRow" style="display:none;">
+													<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px;  width: 340px; padding-right: 80px; height:162px;">					<p class="w_oLayout11" style="padding-top:109px;">There has been so much activity it won't all fit in here!</p>
+														<p class="w_oLayout12" style="text-align:center; width:300px;">Select the More button below<br/>to find out what's been going on.</p>
+
+													</div>
+												</div>
+											</div>
+											<!-- End of home view step 2 data to be commented -->
+											<div class="w_oTableRow" style="width:400px; height:100px;">
+											<div class="w_oTableCell" style="padding:0px; position:absolute !important;top:490px; left:205px; z-index:5; width::400px;"><div id="w_oHRecentActivityMoreButton" class="w_cDownButton"><i class="fa fa-chevron-down w_cBlack"></i></div></div>
+											</div>
+											<!--<div class="w_oTableRow">
+												<div class="w_oTableCell" style="padding-left: 150px; padding-top: 10px;"><div id="w_oHRecentActivityMoreButton" class="w_cDownButton"><i class="fa fa-chevron-down w_cBlack"></i></div></div>
+											</div>-->
+										</div>
+									</div>
+								</div>	
+							</div>
+							<!-- Community data -->
+							<div id="w_oCommData" style="position:static;">
+								<div class="w_oTable">
+									<!-- Left block of core data-->
+									<div class="w_oTableCell">
+										<div class="w_oTable" style="width: 104px;">
+											<div class="w_oTableRow" style="height: 139px;">
+												<div  id="w_oActivityTypeIconsHolder" style="position: relative !important; text-align: center;">
+													<img id='w_oPhIcon' src="images/ph-ico-learning-small.png">
+												</div>
+											</div>
+											<div class="w_oTableRow">
+												<div class="w_oTableCell"><div id="w_oCNavIconPP"></div></div>
+											</div><div class="w_oTableRow">
+												<div class="w_oTableCell"><div id="w_oCNavIconHome"></div></div>
+											</div><div class="w_oTableRow">
+												<div class="w_oTableCell"><div id="w_oCNavIconNotify"></div></div>
+											</div>
+										</div>
+									</div>
+									<div class="w_oTableCell">
+										<!-- Right block of core data -->
+										<!-- Community home step 1-->
+										<div id="w_oComView01">
+											<div class="w_oTable">
+												<div class="w_oTableRow">
+													<div class="w_oTableCell"><p class="w_oLayout09">Status</p></div>
+												</div>
+												<div class="w_oTableRow">
+													<div class="w_oTableCell w_cPanelBg"><p class="w_oLayout01">Learning activity</p></div>
+												</div>
+											</div>
+											<div class="w_oTable">
+												<div class="w_oTableRow w_cLAStatusBg" style="height: 57px;">
+													<div class="w_oTableCell"><p class="w_cData7">Your learning</p></div>
+													<div class="w_oTableCell"><p class="w_oPink">&nbsp;</p><p class="w_cBlueBg">Completed</p></div>
+													<div class="w_oTableCell"><p class="w_cData7">Community learning</p></div>
+													<div class="w_oTableCell"><p class="w_oBlue">&nbsp;</p><p class="w_cBlueBg">Completed</p></div>
+												</div>
+												<div class="w_oTableRow" style="height:10px;"></div>
+											</div>
+										</div>
+										<!-- End of community home step 1-->
+										<!-- Community home step 2-->
+										
+										<div id="w_oComView02">
+											<div class="w_oTable">
+												<div class="w_oTableRow">
+													<div class="w_oTableCell"><p class="w_oLayout09Default" id="w_oLaunchTitleLV">Lumia 920 Camera</p></div>
+												</div>
+											</div>
+											<div class="w_oTable">
+												<div class="w_oTableRow">
+													<div class="w_oTableCell" id="w_oVideoIcon">
+														<div style="position: relative !important;width:158px; height: 78px;">
+															<div id='w_oPlaceHolder' style="position: absolute !important;">
+																<img id='w_oPhImage' src="images/ph-default-video.jpg"/>
+															</div>
+															<!-- <div id="w_oPlaceHolderIcon" style="position: absolute !important; top: 0; left: 0;">
+																<img id="w_oPhIcon" src="images/ph-ico-video.jpg" />
+															</div> -->
+														</div>
+													</div>
+													<div class="w_oTableCell" style="overflow:visible; max-height:60px; position: absolute !important; z-index: 999; padding-left:7px;">
+													<p id="w_oVideoDescRating" style="padding-left: 13px;"></p>
+													<p id="w_oVideoDesc">Learn all about why the Lumia 920 Camera is the best smartphone camera available. With PureView technology and Carl... <a href="javascript:main.onMoreDescClick();">Read more</a></p></div>
+												</div>
+											</div>
+										</div>
+										
+										<!-- End of community home step 2-->
+										<div class="w_oTable">
+											<div class="w_oTableRow">
+												<div id="w_oComViewLinks" class="w_oData6 w_oTableCell w_oLayout08AA">
+													<b><a id="w_CurrentNanoHomeLink" href="javascript:void(0);">Current learning BBBBBBB</a> | <a  id="w_oRecomandNanoCommLink" href="javascript:void(0);">Recommend a learning</a> | <a  id="w_oShareUpdateCommLink" href="javascript:void(0);">Share update</a></b>
+												</div>
+												<div id="w_oComLaunchViewLinks" class="w_oData6 w_oTableCell w_oLayout08AAA" style="float:left;">
+													<b><a id="w_CurrentNanoHomeLink2" href="javascript:void(0);">Selected learning CCCCCCCCCC</a> | <a  id="w_oRecomandNanoCommLink2" href="javascript:void(0);">Recommend</a> | <a  id="w_oRateCommLaunchLink" href="javascript:void(0);">Rate</a> | <a  id="w_Link5" href="javascript:void(0);">Like</a></b>
+												</div>
+											</div>
+											<div class="w_oTableRow" id="w_oLaunchCommView">
+												<div class="w_oTableCell w_oLayout03">
+													<div id='w_oCSco'>
+														<!-- <div>
+															<img id='w_oCScoIcon' src="images/ico-current-nano.png" />
+														</div>
+														<div id='w_oCScoText'>
+															<b id='w_oTScoResult'>Failed</b>
+															<b id='w_oCScoScore'>60</b>
+															<b id='w_oCScoP'>%</b>
+														</div> -->
+													</div>
+													<div>
+														<p id="w_oLaunchTitle">Nokia City Lens for WP8 basics</p>
+													</div>
+													<div>
+														<input id="w_oLaunchButton" type="button" class="w_oButton2" value="LAUNCH"/>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="w_oRecomandNanoCommView">
+											<div class="w_oTableCell" id="w_oCRecomendTable" style="padding: 4px 5px 6px 0px;">
+												<span class="w_oInputSpan2" id="w_oNanoRecomendTxtWrapper" style="margin-left:0px;">
+													<div class="w_oCExpandFormWrapper" style="position:absolute !important;">
+														<div  class="w_oInput2" id="w_oCFirstField">
+															<input type="hidden" class="token-input-style1" id="w_oCRecomendTxt1"  />
+														</div>
+														<input id="w_oCRecommendArtficialButton" type="button" class="w_oButtonDisabled3" value="RECOMMEND"/>
+														<textarea class="w_oInput3" onKeyUp="autoSize(this);" onKeyDown="autoSize(this);" id="w_oCRecomendTxt2" placeholder="Worth recommending because...?"></textarea><br/>
+														<div  class="w_oInput2" id="w_oCThirdField">
+															<input type="hidden" class="token-input-style1" id="w_oCRecomendTxt3" />
+														</div>
+														<input type="text" class="w_oInput2" id="w_oCRecomendTxt3" placeholder="Notify specific people..."/><br/>
+														<input id="w_oCRecommendButton" type="button" class="w_oButtonDisabled3"  style="margin-left: 239px;" value="RECOMMEND"/>
+													</div>
+												</span>
+											</div>
+										</div>
+														
+										<div id="w_oCShareUpdateCommView">
+											<div class="w_oTableCell" id="w_oCShareUpdateTable" style="padding: 4px 5px 6px 0px;">
+												<span class="w_oInputSpan2" id="w_oCShareUpdateTxtWrapper" style="margin-left:0px;" >
+												<div class="w_oCShareExpandFormWrapper" style="position:absolute !important;">
+													<div id="w_oCShareUpdateFirstField">
+													<input type="text" class="w_oInput2" id="w_oCShareTxt1" placeholder="What's your update?"  />
+													</div>
+													
+													<input id="w_oCShareArtficialButton" type="button" class="w_oButtonDisabled3" value="RECOMMEND"/>
+													<br/>
+													<div  class="w_oInput2" id="w_oCThirdField">
+														<input type="hidden" class="token-input-style1" id="w_oCShareTxt2" />
+													</div>
+													
+													<span class="w_cPostToDD w_oCPostToWrapper" id="w_oCShareUpdatePost">
+														<a href="javascript:void(0)" id="w_oCShareUpdatePostTo">Post to...</a>
+														<input type="hidden" class="token-input-style2" id="w_oCShareTxt3" />
+													</span>
+													<input id="w_oCShareButton" type="button" class="w_oButtonDisabled3" value="RECOMMEND"/>
+												</div>
+												</span>
+											</div>
+										</div>
+										
+										
+										
+										<div id="w_oRecomandNanoLaunchView">
+											<div class="w_oTableCell" id="w_oNRecomendTable" style="padding: 4px 5px 6px 0px;">
+												<span class="w_oInputSpan2" id="w_oNRecomendSpan" style="margin-left:0px;">
+													<div class="w_oNExpandFormWrapper" style="position:absolute !important;">
+													<textarea class="w_oInput3" onKeyUp="autoSize(this);" onKeyDown="autoSize(this);" id="w_oNRecomendTxt1" placeholder="Worth recommending because...?"></textarea><br/>
+													<div  class="w_oInput2" id="w_oNSecondField">
+														<input type="hidden" class="token-input-style1" id="w_oNRecomendTxt2" />
+													</div>
+													<input id="w_oNRecommendButton" type="button" class="w_oButtonDisabled3" style="margin-left: 239px;" value="RECOMMEND"/>
+													</div>
+												</span>
+											</div>
+										</div>
+										<div id="w_oRateNanoLaunchView">
+											<div class="w_oTableCell w_oLayout03A" style="height:auto; padding: 6px 5px 0px 5px;">
+												<span class="w_oInputSpan3">
+													<span class="w_oLayout09" id="w_oNanoRatingLaunchView" style="float: left; width: 160px !important; overflow: hidden;padding-bottom: 8px;"></span>
+													<input id="w_oLaunchRateButton" type="button" class="w_oButton2" style="margin-left: 20px; margin-top:3px; float:left;" value="RATE"/>
+												</span>
+											</div>
+										</div>
+										<div id="w_oCommActCommView">
+											<div class="w_oTable">
+												<div class="w_oTableRow">
+													<!-- <div class="w_oTableCell w_cPanelBg" style="border-top: #FFFFFF 1px solid;"><p class="w_oLayout01">Community Activity</p></div> -->
+													<div class="w_oTableCell w_cPanelBg" style="border-top: #FFFFFF 1px solid;"><p class="w_oLayout01"></p></div>
+												</div>
+											</div>
+											<div class="w_oTable" style="padding-top: 20px;">
+												<div class="w_oTableRow">
+													<!-- <div class="w_oTableCell"><p style="width:97px; padding-left: 10px;">Your Community Contribution</p></div> -->
+													<div class="w_oTableCell"><div class="w_oLearningPie" data-percent="40"></div></div>
+													<!-- <div class="w_oTableCell"><p style="width:97px; padding-left: 10px;">Top Community Contributor<br/><br/><a class="w_cLight" href="#">Helen Davies</a></p></div> -->
+													<div class="w_oTableCell"><div class="w_oAvgLearningPie" data-percent="77"></div></div>
+												</div>
+											</div>
+											<!-- <div class="w_oTable" style="padding-top: 20px;">
+												<div class="w_oTableRow">
+													<div class="w_oTableCell"><p><a class="w_cLight" href="#">Posts</a><p class="w_oLayout02">120</p></div>
+													<div class="w_oTableCell"><p><a class="w_cLight" href="#">Likes</a></p><p class="w_oLayout02">300</p></div>
+													<div class="w_oTableCell"><p><a class="w_cLight" href="#">Followers</a></p><p class="w_oLayout02">200</p></div>
+												</div>
+											</div> -->
+										</div>
+										<div id="w_oRecentActivityCommunity" style="display:none;">
+												<div class="w_oTableRow">
+													<div class="w_oTableCell w_cPanelBg" style="border-top: #FFFFFF 1px solid;"><p class="w_oLayout01">Recent activity</p></div>
+												</div>
+												<div id="dvPopUpRecentLaunch" class="w_oTableRowNewDiv">
+													<div class="w_oTableRow1">
+														<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px; width: 330px; padding-right: 80px;">
+															<p class="w_oLayout05" ><b class="w_cTooltip" id="w_oUserName0">Jane Williams</b> > Nokia Devices & Solutions Expertise</p>
+															<p class="w_oLayout07">Passed Lumia 920 Camera</p>
+															
+															
+															<p class="w_oLayout07"><a class="w_cLight" href="#">Like</a><span class="w_cDnT">May 28 at 9:28 am</span></p>
+														</div>
+													</div>
+													<!-- Home view step 2 data to be commented -->
+													<div class="w_oTableRow1" style="display:none;">
+														<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px;  width: 340px; padding-right: 80px;">
+															<p class="w_oLayout05"><b class="w_cTooltip" id="w_oUserName1">Evenlyn Cassidy </b> > Nokia Devices & Solutions Expertise</p>
+															<p class="w_oLayout07">Recommended Nokia OS &amp; Solution Expertise training</p>
+															<p class="w_oLayout06">This was great I learnt so much about the company and the technology you've got the check this out! </p>
+															<p class="w_oLayout07"><a class="w_cLight" href="#">Like</a><span class="w_cDnT">May 28 at 9:28 am</span></p>
+														</div>
+													</div>
+												</div>
+												<div class="w_oTableRow" style="display:none;">
+													<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px;  width: 340px; padding-right: 80px; height:162px;">					<p class="w_oLayout11">There has not been any activity yet!</p>
+														<p class="w_oLayout12">Select a disc to explore the available learning.</p>
+
+													</div>
+												</div>
+												<div class="w_oTableRow" style="display:none;">
+													<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px;  width: 340px; padding-right: 80px; height:162px;">					<p class="w_oLayout11" style="padding-top:109px;">There has been so much activity it won't all fit in here!</p>
+														<p class="w_oLayout12" style="text-align:center; width:300px;">Select the More button below<br/>to find out what's been going on.</p>
+
+													</div>
+												</div>
+										</div>
+										<div id="w_oRecentActivityCMoreButton" class="w_oTableRow" style="width:400px; height:100px;">
+											<div class="w_oTableCell" style="padding:0px; position:absolute !important;top:490px; left:205px; z-index:5; width::400px;"><div id="w_oHRecentActivityMoreButtonC" class="w_cDownButton"><i class="fa fa-chevron-down w_cBlack"></i></div></div>
+										</div>
+										
+										
+										<div id="w_oRecentActivityLaunch">
+												<div class="w_oTableRow">
+													<div class="w_oTableCell w_cPanelBg" style="border-top: #FFFFFF 1px solid;"><p class="w_oLayout01">Recent activity</p></div>
+												</div>
+												<div id="dvPopUpRecentLaunch" class="w_oTableRowNewDiv">
+													<div class="w_oTableRow1">
+														<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px; width: 330px; padding-right: 80px;">
+															<p class="w_oLayout05" ><b class="w_cTooltip" id="w_oUserName0">Jane Williams</b> > Nokia Devices & Solutions Expertise</p>
+															<p class="w_oLayout07">Passed Lumia 920 Camera</p>
+															<p class="w_oLayout06">This was great I learnt so much about the company and the technology you've got the check this out! </p>
+															
+															<p class="w_oLayout07"><a class="w_cLight" href="#">Like</a><span class="w_cDnT">May 28 at 9:28 am</span></p>
+														</div>
+													</div>
+													<!-- Home view step 2 data to be commented -->
+													<div class="w_oTableRow1" style="display:none;">
+														<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px;  width: 340px; padding-right: 80px;">
+															<p class="w_oLayout05"><b class="w_cTooltip" id="w_oUserName1">Evenlyn Cassidy </b> > Nokia Devices & Solutions Expertise</p>
+															<p class="w_oLayout07">Recommended Nokia OS &amp; Solution Expertise training</p>
+															<p class="w_oLayout06">This was great I learnt so much about the company and the technology you've got the check this out! </p>
+															<p class="w_oLayout07"><a class="w_cLight" href="#">Like</a><span class="w_cDnT">May 28 at 9:28 am</span></p>
+														</div>
+													</div>
+												</div>
+												<div class="w_oTableRow" style="display:none;">
+													<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px;  width: 340px; padding-right: 80px; height:162px;">					<p class="w_oLayout11">There has not been any activity yet!</p>
+														<p class="w_oLayout12">Select a disc to explore the available learning.</p>
+
+													</div>
+												</div>
+												<div class="w_oTableRow" style="display:none;">
+													<div class="w_oTableCell w_cBottomBorder" style="padding-bottom: 8px;  width: 340px; padding-right: 80px; height:162px;">					<p class="w_oLayout11" style="padding-top:109px;">There has been so much activity it won't all fit in here!</p>
+														<p class="w_oLayout12" style="text-align:center; width:300px;">Select the More button below<br/>to find out what's been going on.</p>
+
+													</div>
+												</div>
+										</div>
+										<div id="w_oRecentActivityLaunchMoreButton" class="w_oTableRow" style="width:400px; height:100px;">
+											<div class="w_oTableCell" style="padding:0px; position:absolute !important;top:490px; left:205px; z-index:5; width::400px;"><div id="w_oHRecentActivityMoreButtonN" class="w_cDownButton"><i class="fa fa-chevron-down w_cBlack"></i></div></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script/jquery-1.10.0.min.js"></script>
+		<script type="text/javascript" src="script/excanvas.js"></script>
+        <script type="text/javascript" src="script/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" src="script/plug-ins.js"></script>
+		<script src="script/jquery.tokeninput.js"></script>
+		<script src="script/home.js"></script>
+	</body>
+</html>

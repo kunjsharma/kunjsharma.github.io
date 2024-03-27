@@ -1,0 +1,66 @@
+html, body, div {
+	margin:0;
+	padding:0;
+}
+div {
+	position: absolute;
+	text-align: center;
+	top:0px;
+  left: 0px;
+}
+#w_oCertificatePopupBlocker {
+  margin:0px;
+  padding:0px
+  display:none;
+  background-color:rgba(0,0,0,1);
+  top:0px;
+  left: 0px;
+}
+#w_oCertificatePopupBg {
+	
+}
+#w_oCertificatePopup {
+  width:783px;
+  height:484px;
+  display:block;
+  position: relative;
+  margin:0;
+  padding:0;
+  top:0px;
+  left: 0px;
+}
+#w_oCertificatePopup01, #w_oCertificatePopup02, #w_oCertificatePopup03, #w_oCertificatePopup04 {
+  position:relative;
+  color:#ffffff;
+}
+#w_oCertificatePopup01 {
+  font-size:36px;
+  padding-top:160px;
+}
+#w_oCertificatePopup02 {
+  font-size:25px;
+  padding-top:75px;
+}
+#w_oCertificatePopup03 {
+  font-size:15px;
+  padding-top:5px;
+  height: 40px;
+}
+#w_oCertificatePopup04 {
+  font-size:12px;
+  padding-top:4px;
+  font-weight: bold;
+}
+@font-face {
+    font-family: 'Nokia Pure Text';
+    /*src: url('../fonts/NokiaPureText.ttf') format('truetype'), url('fonts/EntezareZohoor2.svg') format('svg');*/
+    src: url('../fonts/NokiaPureText.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Nokia Pure Text";
+    src: url("../fonts/Nokia_Pure_Text_Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

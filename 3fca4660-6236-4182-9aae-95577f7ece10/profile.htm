@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Community View</title>
+		<link rel="stylesheet" type="text/css" href="style/universal.css"/>
+		<link rel="stylesheet/less" href="style/profile.less" type="text/css" />
+		<script src="script/less-1.5.0.min.js"></script>
+		<link href="font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">
+	</head>
+	<style type="text/css">
+		
+		
+	</style>
+	<body>
+	<!-- Profile Panel Starts-->
+		<div id="w_oWelcomePopupBlocker"></div>
+	<div id="w_oProfileContainer" class="w_cProfileContainer">
+		<div class="w_oProfileContainerW">
+			<div class="w_oProfileCloseWrapper">
+				<a href="javascript:window.parent.onProfileFrameClick();" class="w_cExitPopupButton"><i class="fa fa-times"></i></a>
+			</div>
+			<div class="w_oProfileContentWrapper">
+				<div class="w_cPersonalDetailsW heading">
+					<div class="w_cPersonalDetailsTab">Personal Details</div>
+				</div>
+				<div class="w_cPersonalDetailsWW">
+					
+						<div class="w_cPersonalDD1 w_cColumn">
+							<div class="w_cPersonalDD1W">
+								<div class="w_cPersonalPhotoW">
+									<img src="images/ico-user-default-large.png" alt="" id="w_oUploadPreview" />
+									<form name="FormProfileSetting">
+									<div class="fileUpload btn btn-primary">
+										<span class="w_oProfilePictureUpload"><i class="fa fa-plus-square"></i> Add a photo</span>
+										<input type="file" id="w_oProfilePicture" class="upload" onChange="PreviewImage();" />
+									</div>
+								</div>
+								<div class="w_cPersonalDescriptionW" id="w_oProfileInformation">
+									<span class="w_cHeading">John Smith<br/><span class="w_cSubHeading">Universal Agent, Nokia Care - Manchester</span></span>
+									<p style="clear:both; padding:13px 0 0 0;">Dedicated team player, constantly supporting my colleagues with using specific software, findings the appropriate documentation and even editing business correspondence.</p>
+									<p style="float:left; width:100%; padding:30px 0 0 0;"><input id="w_oEdit" type="button" class="w_oButton4" style="margin: 0px 0px 0px 8px; float:left;" value="EDIT"/><span style="float:left; padding:0px 0 0 5px;"><a href="javascript:void(0);" class="w_cEditProfileSettings"><i class="fa fa-cog fa-c-ps"></i></a></span></p>
+								</div>
+								<div class="w_cPersonalDescriptionW" id="w_oProfileInformationEdit">
+									<span class="w_cHeading"><input text="text" name="UserName" id="w_oUserName" class="w_cHeadingInput" value="John Smith" /><br/><span class="w_cSubHeading"><input text="text" name="UserName" class="w_cSubHeadingInput" value="Universal Agent, Nokia Care - Manchester" /></span></span>
+									<p style="clear:both; padding:13px 0 0 0;"><textarea class="w_cDiscriptionInput" >Dedicated team player, constantly supporting my colleagues with using specific software, findings the appropriate documentation and even editing business correspondence.</textarea></p>
+									<p style="float:left; width:100%; padding:30px 0 0 0;"><input id="w_oSave" type="button" class="w_oButton4" style="margin: 0px 0px 0px 8px; float:left;" value="SAVE"/><span style="float:left; padding:0px 0 0 5px;"><a href="javascript:void(0);" class="w_cEditProfileSettings"><img src="images/setting_icon.png" alt="" /></a></span></p>
+								</div>
+							</div>
+							<div id="w_oEditSection" style="position:static;">
+								<!-- Pending -->
+								<form name="FormEditSetting">
+									<span class="w_cHeadingEditSection">Personal settings</span>
+									<div class="w_cFormEdit">
+										<div class="w_cFormRow">
+											<div class="w_cFormLabel">Username (Sign-in ID)</div>
+											<input type="email" class="w_cInputText" placeholder="john.smith@nokia.com" />
+										</div>
+										
+										
+										<div class="w_cFormRow">
+											<div class="w_cFormLabel">Password102</div>
+											<input id="w_oChangePassword" type="button" class="w_oButton4" value="CHANGE"/>
+																		
+											<div class="w_cFormRow" id="w_oPasswordEditSection">
+												<div class="w_cFormRow"><input type="password" class="w_cInputText" id="w_oOldPassword" placeholder="Old Password" /></div>
+												<div class="w_cFormRow"><input type="password" class="w_cInputText" id="w_oNewPassword" placeholder="New Password"/></div>
+												<div class="w_cFormRow"><input type="password" class="w_cInputText" id="w_oConfirmNewPassword" placeholder="Confirm New Password" /></div>
+												<div class="w_cFormRow"><input id="w_oSavePass" type="button" class="w_oButton4" style="float:left; padding:0px; text-align:center;" value="SAVE"/></div>
+												
+											</div>
+											<div id="w_oPasswordEditMessage">
+												<span id="w_oMessageText"></span>
+											</div>
+										</div>
+										<!-- Added  by Dipender -->
+										<div class="w_cFormRow">
+											<div class="w_cFormLabel">Language</div>
+											<div class='selectBox'>
+												<span class='selected'></span>
+												<span class='selectArrow'></span>
+												<div class="selectOptions" >
+													<span class="selectOption" value="Option 1">English</span>
+													<span class="selectOption" value="Option 2">Arabic</span>
+													<span class="selectOption" value="Option 3">Armenian</span>
+													<span class="selectOption" value="Option 4">French</span>
+													<span class="selectOption" value="Option 4">German</span>
+												</div>
+											</div>
+										</div>
+										<!-- Added  by Dipender -->
+									</div>
+								</form>
+							</div>
+							<div class="w_cExtraIconDD">
+								<!--<span class="w_cExtraIconW">
+									<span class="w_cExtraIcons">
+										<span class="left"><a href="javascript:void(0);"><img src="images/qualifications_icon.png" alt="" /></a></span><span class="right"><a href="javascript:void(0);">Qualifications</a></span>
+									</span>
+									<span class="w_cExtraIcons">
+										<span class="left"><a href="javascript:void(0);"><img src="images/skills_icon.png" alt="" /></a></span><span class="right"><a href="javascript:void(0);">Skills</a></span>
+									</span>
+								</span>-->
+							</div>
+							<div class="w_cActivityStatusW">
+								<div class="w_cActivityStatusTab">Activity and Status</div>
+							</div>
+						</div>
+						
+						<div class="w_cPersonalDD2 w_cColumn">
+							<div class="w_cHeadingPersonal2">Location</div>
+							<div class="w_cContentPersonal2">
+								<p><span>Region:</span> Europe</p>
+								<!--<p><span>Company:</span> Nokia</p>-->
+								<p><span>ASV:</span> n/a</p>
+							</div>
+							
+							<div class="w_cHeadingPersonal2">Contact</div>
+							<div class="w_cContentPersonal2">
+								<p><span>Email:</span> John.Smith@nokia.com</p>
+								<!--<p><span>Phone:</span> <a href="javascript:void(0);">Add your number</a></p>
+								<p><span>Mobile:</span> <a href="javascript:void(0);">Add your number</a></p>-->
+							</div>
+						</div>
+											
+				</div>
+				
+				<div class="w_cProfileActivityContainer">
+					<div class="w_cProfileLeftATC">
+						<div class="w_cNavProfAct">
+							<div class="w_cNavProfActW">
+								<a href="javascript:void(0);" id="w_oLearning-Tab">Learning</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" id="w_oAccreditation-Tab">Accreditation</a>&nbsp;&nbsp;<!--|&nbsp;&nbsp;<a href="javascript:void(0);" id="w_oCommunity-Tab">Community</a>-->
+							</div>
+						</div>
+						<!-- Learning Starts -->
+						<div id="w_oLearning">
+							<div class="w_cProfileATCHeadingPointer"></div>	
+							<div class="w_cProfileATCHeading">
+							</div>
+							
+							<div class="w_cActCC">
+								<div class="w_cActCWrapper">
+									<div class="w_cActPicture">
+										<img src="images/ico-user-default-small.png" alt="" />	
+									</div>
+									<div class="w_cActDescription">
+										<span class="w_cActDescHeading"><span class="bold">John Smith ></span> Windows phone</span>
+										<div class="w_ActDeslevel1">
+											<p class="w_cTextLevel">Passes Lumia 920 Camera</p>
+											<p class="w_cLinkLevel"><a href="javascript:void(0);">Like</a>
+											<span class="w_ActDesDate">May 28 at 9:28 am</span></p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="w_cActCWrapper">
+									<div class="w_cActPicture">
+										<img src="images/ico-user-default-small.png" alt="" />	
+									</div>
+									<div class="w_cActDescription">
+										<span class="w_cActDescHeading"><span class="bold">John Smith ></span> Windows phone</span>
+										<div class="w_ActDeslevel1">
+											<p class="w_cTextLevel">Completed Lumia 920 Functionality</p>
+											<p class="w_cLinkLevel"><a href="javascript:void(0);">Like</a>
+											<span class="w_ActDesDate">May 22 at 4:13 pm</span></p>
+											<p class="w_cLikeLevel1">
+												<span class="w_cLikeBox"><img src="images/like_icon.png" alt="" /></span> 
+												<span class="w_cLikeText"><a href="javascript:void(0);">2 people</a>like this</span>
+											</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="w_cActCWrapper">
+									<div class="w_cActPicture">
+										<img src="images/ico-user-default-small.png" alt="" />	
+									</div>
+									<div class="w_cActDescription">
+										<span class="w_cActDescHeading"><span class="bold">John Smith ></span> Windows phone</span>
+										<div class="w_ActDeslevel1">
+											<p class="w_cTextLevel">Completed Lumia 920 Screen</p>
+											<p class="w_cLinkLevel"><a href="javascript:void(0);">Like</a> 
+											<span class="w_ActDesDate">May 22 at 4:13 pm</span></p>
+											<p class="w_cLikeLevel1">
+												<span class="w_cLikeBox"><img src="images/like_icon.png" alt="" /></span> 
+												<span class="w_cLikeText"><a href="javascript:void(0);">2 people</a>like this</span>
+											</p>
+											<div class="w_cActDescriptionSLC">
+												<div class="w_cActDescriptionSLW">
+													<div class="w_cActPictureSL">
+														<img src="images/user1.jpg" alt="" />	
+													</div>
+													<div class="w_cActDescriptionSL">
+														<span class="w_cActDescSubHeading">Jane Williams</span>
+														<p class="w_cTextLevel">I knew you'd the first to complete the first learning for Windows Phone.<br/>Congratulations!!</p>
+														<p class="w_cLinkLevel"><a href="javascript:void(0);">Like</a>
+														<span class="w_ActDesDate">May 9 at 1:45 pm</span></p>
+														
+													</div>
+												</div>
+											</div>
+											<p class="w_cLikeLevelS">
+												<span class="w_cLikeBox"><img src="images/like_icon.png" alt="" /></span> 
+												<span class="w_cLikeText"><a href="javascript:void(0);">You</a> & <a href="javascript:void(0);">Evelyn Cassidy</a> like this</span>
+											</p>
+										</div>
+									</div>
+								</div>
+								
+								<p class="w_cLoadMoreAct"><img src="images/ico-down-arrow.png" alt="" align="middle" /></p>
+								
+								
+							</div>
+						</div>
+						<!-- Learning Ends -->
+						<!--Accridation Starts -->
+					<div id="w_oAccreditation">
+							<div class="w_cProfileATCHeadingPointer"></div>	
+							<div class="w_cProfileATCHeading">
+								<!-- <a href="#" id="ExAll" class="w_cExpandCollapseBtn"><img src="images/expand_btn.png" border="0"/></a>
+								<a href="#" id="CallAll" class="w_cExpandCollapseBtn"><img src="images/collapse_btn.png" border="0"/></a> -->
+								<a href="#" id="toggleAll">
+									<div id="toggleAllCont">
+										<div class="toggleAllContLeft"><span>EXPAND ALL</span></div>
+										<div class="toggleAllContRight"></div>
+									</div>
+								</a>
+							</div>
+							
+							<div class="w_cActCC">
+								<ul class="accordion">
+									
+								</ul>
+							</div>
+						</div>
+						<!--Accridation Ends -->
+					</div>
+										
+					
+					<div class="w_cProfileRightATC">
+						<div class="w_cRightBoxesHeading"><span class="left">Communities</span><span class="right">5</span></div>
+						<div class="w_cRightBoxesContent">
+							<div class="w_cRightCommunityTable">
+								<div class="w_cRightCommunityRow">
+									<div class="w_cTcCommunity">&nbsp;</div>
+									<div class="w_cTcStatus "><span class="w_cTcHeading">Status</span></div>
+									<div class="w_cTcAverage"><span class="w_cTcHeading w_cTcHeadingA">Average</span></div>
+								</div>
+								<div class="w_cRightCommunityRow">
+									<div class="w_cTcCommunity">Nokia Way</div>
+									<div class="w_cTcStatus">83%</div>
+									<div class="w_cTcAverage">67%</div>
+								</div>
+								<div class="w_cRightCommunityRow">
+									<div class="w_cTcCommunity">Personal Effectiveness</div>
+									<div class="w_cTcStatus">63%</div>
+									<div class="w_cTcAverage">25%</div>
+								</div>
+								<div class="w_cRightCommunityRow">
+									<div class="w_cTcCommunity">Asha</div>
+									<div class="w_cTcStatus">19%</div>
+									<div class="w_cTcAverage">71%</div>
+								</div>
+								<div class="w_cRightCommunityRow">
+									<div class="w_cTcCommunity">Windows Phone</div>
+									<div class="w_cTcStatus">40%</div>
+									<div class="w_cTcAverage">70%</div>
+								</div>
+								<div class="w_cRightCommunityRow">
+									<div class="w_cTcCommunity">Mobile Tech Basics</div>
+									<div class="w_cTcStatus">0%</div>
+									<div class="w_cTcAverage">15%</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="w_cRightBoxesHeading"><span class="left">Followers</span><span class="right">4</span></div>
+						<div class="w_cRightBoxesContent">
+							<img src="images/user1.jpg" alt="" />
+							<img src="images/user2.jpg" alt="" />
+							<img src="images/user3.jpg" alt="" />
+							<img src="images/user4.jpg" alt="" />
+						</div>
+						
+						<div class="w_cRightBoxesHeading"><span class="left">Following</span><span class="right">2</span></div>
+						<div class="w_cRightBoxesContent">
+							<img src="images/user2.jpg" alt="" />
+							<img src="images/user3.jpg" alt="" />
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	<!-- Profile Panel Ends -->
+	<script src="script/jquery-1.10.0.min.js"></script>
+	<script src="script/jquery-ui-1.10.3.custom.min.accordian.js"></script>
+	<script src="script/less-1.5.0.min.js"></script>
+	<script src="script/profile.js"></script>
+	</body>
+</html>

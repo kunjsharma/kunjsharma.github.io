@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="style/universal.css"/>
+		<link rel="stylesheet/less" href="style/login.less" type="text/css" />
+		<script src="script/less-1.5.0.min.js"></script>
+	</head>
+	<body>
+		<!--<a href="javascript:showMessage()">show error</a>	-->
+		<!-- Password security popup shows when user types password -->
+		<div id="w_oPSPopup">
+			<div class="w_cPSPopupC1" id="w_oPSPopupDownArrow">
+				<div class="w_cPSPopupC2"></div>
+			</div>
+			<div class="w_cPSPopupW">
+				<div id="w_oPSPopupDetails">
+					<ul>
+						<li class='w_cCorrectIcon'>@BlenderResources. LoginResx .Login .Msg10Char</li>
+						<li class='w_cCorrectIcon'>@Blender Resources. LoginResx .Login .Msg10Char</li>
+						<li class='w_cAlertIcon'>@Blender Resources. LoginResx .Login .Msg10Char</li>
+						<ul>
+							<li class='w_cCorrectIcon'>@BlenderResources. LoginResx .Login .Msg10Char</li>
+							<li class='w_cCorrectIcon'>@Blender Resources. LoginResx .Login .Msg10Char</li>
+							<li class='w_cAlertIcon'>@Blender Resources. LoginResx .Login .Msg10Char</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="w_oContainer" class="w_oAni">
+			<div id="w_oCircle01" class="w_oAni w_oLinearGrad2">
+				<!-- -->
+				<div id="w_oCircle03" class="w_oLinearGrad2 w_oAni">
+					<div id="w_oCircle03Data" class="w_oAni">
+						<!-- -->
+						<div class="w_oTable w_oAni">
+							<!-- Left block of core data-->
+							<div class="w_oTableCell">
+								<div class="w_oTable" style="width: 98px;">
+									<div class="w_oTableRow">
+										<div class="w_oTableCell">
+											<!-- Empty cell holds icons at middle left -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="w_oTableCell">
+								<!-- Right block of core data -->
+								<div class="w_oTable" style="width: 422px;">
+									<div class="w_oTableRow" style="height: 40px;">
+										
+									</div>
+									<div class="w_oTableRow">
+										<div class="w_oTableCell" id="w_oLogoContainer">
+											<img id="w_oLogo" height="103" src="images/logo-nokia-ca-login.png" />
+										</div>
+									</div>
+									<div class="w_oTableRow">
+										<!-- Sign in pointer -->
+										<div id="w_oData6" class="w_oTableCell w_oLayout08A">
+											<b><a id="w_Link1" href="javascript:void(0);">Sign in</a> | <a  id="w_Link2" href="javascript:void(0);">Forgot password?</a><!-- | <a  id="w_Link3" href="javascript:void(0);">No account? Register</a>--></b>
+										</div>
+										<!-- Forgot password pointer -->
+										<!-- <div id="w_oData6" class="w_oTableCell w_oLayout08B">
+											<b><a id="w_Link1" href="#">Sign in</a> | <a  id="w_Link2" href="javascript:void(0);">Forgot password?</a> | <a  id="w_Link3" href="#">No account? Register</a></b>
+										</div> -->
+										<!-- Register pointer -->
+										<!-- <div id="w_oData6" class="w_oTableCell w_oLayout08C">
+											<b><a id="w_Link1" href="#">Sign in</a> | <a  id="w_Link2" href="#">Forgot password?</a> | <a  id="w_Link3" href="javascript:void(0);">No account? Register</a></b>
+										</div> -->
+									</div>
+									<!-- Sign in block -->
+									<div class="w_oTableRow w_oSignInBlock">
+										<div class="w_oTableCell w_cInputHolder">
+											<span class="w_oInputSpan2">
+												<input type="text" class="w_oInput2" placeholder="someone@example.com" id="aa"/><br/>
+												<input type="password" class="w_oInput2" placeholder="password" id="bb"/><br/>
+												<span style="float:left; margin:1px 7px 0 0; padding-left:5px; padding-top:3px;">
+													<input type="checkbox" id="w_oCheckStaySign" class="w_oInput3 regular-checkbox" checked="true"/>
+													<label for="w_oCheckStaySign" style="cursor:pointer;"></label>
+												</span>
+												<span class="w_cLinkStyle" style=" float:left; margin-top:4px;"><label for="w_oCheckStaySign" style="cursor:pointer;">Stay signed in</label></span>
+												<!-- <span id="w_oLaunchButton" class="w_oButton">SIGN IN</span> -->
+												<span style="float:right; padding-top:2px;">
+												<input type="button" class="w_oButton2" value="SIGN IN"/>
+												</span>
+											</span>
+										</div>
+									</div>
+									<!-- End of sign in block -->
+									<!-- Forgot password in block -->
+									<div class="w_oTableRow w_oForgotPassInBlock" style="display:none;">
+										<div class="w_oTableCell w_cInputHolder">
+											<p class="w_oAccountText">Please enter your email address to get some simple instructions on changing your password.</p>
+											<span class="w_oInputSpan2">
+												<input type="text" class="w_oInput2" placeholder="someone@example.com"/><br/>
+												<!--<input type="password" class="w_oInput2" placeholder="password"/><br/>
+												<input type="checkbox" class="w_oInput3" checked="true"/>
+												<span class="w_cLinkStyle"><b>Stay signed in</b></span>-->
+												<!-- <span id="w_oLaunchButton" class="w_oButton">SIGN IN</span> -->
+												<span style="float:right; padding-top:2px;">
+												<input type="button" class="w_oButton2" value="CONTINUE"/>
+												</span>
+											</span>
+										</div>
+									</div>
+									<!-- End of Forgot password in block -->
+									<!-- Forgot Register in block -->
+									<!--<div class="w_oTableRow w_oRegisterInBlock" style="display:none;">
+										<div class="w_oTableCell w_cInputHolder">
+											<p class="w_oAccountText">Enter your details to join.</p>
+											<span class="w_oInputSpan2">
+												<input type="text" class="w_oInput2" placeholder="someone@example.com"/><br/>
+												<input type="button" class="w_oButton2" value="CONTINUE"/>
+											</span>
+										</div>
+									</div>-->
+									<!-- End of Register in block -->
+									<div class="w_oTableRow">
+										<div class="w_oTableCell w_cRecentActBar"><p class="w_oLayout01"></p></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script/jquery-1.10.0.min.js"></script>
+		<script type="text/javascript" src="script/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" src="script/path.js"></script>
+		<script src="script/easing.js.js"></script>
+		<script src="script/jquery.toastmessage.js"></script>
+		<script src="script/login.js"></script>
+	</body>
+</html>
