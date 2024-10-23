@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #404039;
+}
+section {
+  max-width: 768px;
+  padding: 20px;
+  background-color: #f1f2f5;
+}
+.ls-f-colours-header {
+  display: flex;
+  border-top: 1px solid #9f9fa0;
+  padding: 20px 0;
+}
+.ls-f-colours-heading {
+  font-size: 18px;
+  font-weight: 600;
+  width: 50%;
+}
+.ls-f-controls {
+  font-size: 30px;
+  font-weight: normal;
+  width: 50%;
+  justify-content: right;
+  display: flex;
+}
+#ls-f-colours-container,
+.ls-f-colours-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.ls-f-colours-element {
+  width: 50%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+.ls-f-colours-label {
+  width: 50%;
+  display: block;
+  position: relative;
+  padding-left: 65px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.ls-f-colours-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom circle/checkbox */
+.ls-f-colours-circle {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  height: 55px;
+  width: 55px;
+  background-color: #404039;
+  border-radius: 50%;
+  border: 2px transparent;
+  transition: transform 0.2s;
+  box-sizing: border-box;
+}
+
+/* On mouse-over, animation if required */
+.ls-f-colours-label:hover input ~ .ls-f-colours-circle {
+  /* transform: scale(0.9); */
+}
+
+.ls-f-colours-circle:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.ls-f-colours-label input:checked ~ .ls-f-colours-circle:after {
+  display: block;
+}
+
+/* Style the circle */
+.ls-f-colours-label .ls-f-colours-circle:after {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #e59805;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 3px #ffffff inset;
+}
+
+/*Responsive: Breakpoint(s) - 480px */
+@media only screen and (max-width: 480px) {
+  .ls-f-colours-element {
+    width: 100%;
+  }
+}
